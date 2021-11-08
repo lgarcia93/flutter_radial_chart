@@ -14,13 +14,19 @@ and the Flutter guide for
 A simple radial chart for Flutter.
 
 ## Features
-
+Interactable radial chart.
 
 ## Usage
 
 ```dart
     Chart(
-      items: [
+      onItemDeselected: () {
+        //handle OnItemDeselected
+      },
+      onItemSelected: (ChartItem item) {
+        //handle OnItemSelected
+      },
+      tems: [
         ChartItem(
           value: 23,
           color: Colors.red,
